@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find Slots</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body onload="fetch()">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <center>
+                    <h1 class="heading">COVID-19 VACCINE SLOTS</h1>
+                </center>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="row mb-5 mt-3">
+                    <div class="col-lg-12">
+                        <form class="form">
+                            <div style="margin-bottom: 15px;">
+                                <label for="states" style="color:white;">Choose State</label>
+                                <select class="form-control state" id="states" name="state" required="required">
+                                    <option>Choose state</option>
+                                </select>
+                            </div>
+                            
+                            <div style="margin-bottom: 15px;">
+                                <label for="cities" style="color:white;">Choose City</label>
+                                <select class="form-control city" id="cities" name="city" required="required">
+                                    <option>Choose city</option>
+                                </select>
+                            </div>
+
+                            <div style="margin-bottom: 15px;">
+                                <label for="date" style="color:white;">Choose Date</label>
+                                <select class="form-control date" id="date" name="date" required="required">
+                                    <option>Choose date</option>
+                                </select>
+                            </div>
+  
+                            <center><button type="button" class="btn submit-btn d-none">Submit</button></center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 table-container mb-4 pb-3">
+                <div class="result table-responsive">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+    <!-- jQuery library -->
+    
+    
+    <script type="text/javascript" src="js/index.js"></script>
+    
+</html>
