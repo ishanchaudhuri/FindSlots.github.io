@@ -2,10 +2,14 @@
 <html>
     <head>
         <title>Find Slots</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body onload="fetch()">
@@ -32,14 +36,14 @@
                             <div style="margin-bottom: 15px;">
                                 <label for="cities" style="color:white;">Choose City</label>
                                 <select class="form-control city" id="cities" name="city" required="required">
-                                    <option>Choose city</option>
+                                    <option value="">Choose city</option>
                                 </select>
                             </div>
 
                             <div style="margin-bottom: 15px;">
                                 <label for="date" style="color:white;">Choose Date</label>
                                 <select class="form-control date" id="date" name="date" required="required">
-                                    <option>Choose date</option>
+                                    <option value="">Choose date</option>
                                 </select>
                             </div>
   

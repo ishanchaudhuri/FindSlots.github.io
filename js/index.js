@@ -47,11 +47,13 @@
 
 								$(".submit-btn").click(function(){
 									var dat=$(".date").val();
+									//alert(dat);
 									if(dat=="")
 									{
 										alert("Please Choose Date");
 									}
 									
+									else
 									{
 										var d_id=$(".city").val();
 										if(d_id=="")
