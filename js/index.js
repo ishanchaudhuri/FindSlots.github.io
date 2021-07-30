@@ -9,7 +9,7 @@
 					for(i=0;i<8;i++)
 					{
 						var date=new Date();
-						var last=new Date(date.getTime()-(i*24*60*60*1000));
+						var last=new Date(date.getTime()+(i*24*60*60*1000));
 						var day=last.getDate();
 						var mon=last.getMonth()+1;
 						if(mon<10)
